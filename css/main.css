@@ -1,0 +1,63 @@
+
+/******************/
+/* Type selectors */
+/******************/
+
+body {
+    background: #dddddd;
+}
+
+
+h1 {
+    color: blue;
+}
+
+
+
+/*******************/
+/* Class Selectors */
+/*******************/
+
+.box {
+    border: 1px solid #000;
+    margin: 10px;
+    background-color: yellow;
+}
+
+
+.rounded {
+    border-radius: 5px;
+    background-color: green;
+}
+
+
+
+
+/****************/
+/* Id Selectors */
+/****************/
+
+#ingredients-list {
+    background-color: lightblue;
+}
+
+
+
+
+/***********************/
+/* Some other examples */
+/***********************/
+
+
+.hightlight {
+    background: yellow;
+}
+
+footer {
+    background: cyan;
+}
+
+
+#cool-link {
+    background-color: cyan;
+}
