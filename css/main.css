@@ -1,11 +1,21 @@
 
 /******************/
+/* Universal selector */
+/******************/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/******************/
 /* Type selectors */
 /******************/
 
 body {
     background: #dddddd;
 }
+
 
 
 h1 {
@@ -26,9 +36,16 @@ h1 {
 
 .rounded {
     border-radius: 5px;
-    background-color: green;
 }
 
+
+.banner {
+    background-color:  rgb(219, 155, 219);
+    border: 5px solid purple;
+    margin: 50px 10px;
+    padding: 50px 50px 50px 50px;
+    border-radius: 20px;
+}
 
 
 
@@ -43,20 +60,53 @@ h1 {
 
 
 
+/**********************/
+/* Multiple selection */
+/**********************/
+
+/* every h1 AND every h2 */
+h1, h2 {
+    font-family: Georgia;
+}
+
+
+
 /***********************/
-/* Some other examples */
+/* Combining Selectors */
 /***********************/
 
-
-.hightlight {
-    background: yellow;
-}
-
-footer {
-    background: cyan;
+/* every div that ALSO has the class 'box' */
+div.box {
+    font-size: 200%;
 }
 
 
-#cool-link {
-    background-color: cyan;
+/***************/
+/* Descendants */
+/***************/
+
+/* every p that is a DESCENDANT of every footer */
+footer p {
+    background-color: green;
 }
+
+
+
+
+/*****************/
+/* Media Queries */
+/*****************/
+
+
+@media (min-width: 800px) {
+    .banner {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .banner {
+        width: 30%;
+    }
+}
+
